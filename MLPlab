@@ -1,0 +1,40 @@
+MLP LAB 2nd Feb 2024
+------------------------2D ARRAY AND TYPE OF ARRAY----------------------------------------
+import numpy as np
+arr=np.array([(1,2,3,4), (5,6,7,8)])
+print(arr)
+print(type(arr))
+--------------------------3D ARRAY AND OTHER FUNCTIONS ---------------------------------------
+ars=np.array([[2,3,4],[5,6,7],[8,9,0]])
+print(ars)
+
+------------PRINT DIMENSION OF ARRAY-----------
+print("dimension of array",ars.ndim)
+
+------------PRINT SHAPE OF ARRAY(means 3x3,2x2)------------------
+print("shape of array:",ars.shape)
+-----------PRINT SIZE OF ARRAY-------------------------
+print("size of the array",ars.size)
+
+-----------PRINT DATA TYPE OF ARRAY---------------
+print("data type of array",ars.dtype)
+-----------------PRINT
+
+import pandas as pd
+df=pd.DataFrame([1,2,3,4,5])
+print(df)
+
+
+df3=pd.read_csv("/home/student/pandacsvfile.csv")
+print(df3)
+
+df.head()
+
+df3.tail()
+
+df3.info()
+
+df.describe()
+
+df3['roll']=[7000,5000,4000,1000,9000,9876,8675654,9765,975654,9787]
+print(df3)
